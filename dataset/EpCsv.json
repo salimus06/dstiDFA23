@@ -1,0 +1,37 @@
+{
+	"name": "EpCsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DFBlogStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "user.csv",
+				"folderPath": "data",
+				"container": "datafactorycontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "John",
+				"type": "String"
+			},
+			{
+				"name": "Doe",
+				"type": "String"
+			},
+			{
+				"name": "USA",
+				"type": "String"
+			}
+		]
+	}
+}
