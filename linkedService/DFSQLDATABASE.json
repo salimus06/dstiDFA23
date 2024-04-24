@@ -1,0 +1,13 @@
+{
+	"name": "DFSQLDATABASE",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "A SQL DATABASE FOR MY DFCLASS",
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=stserver1.database.windows.net;initial catalog=stouatidb;user id=salimus",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDQ5NDZBMUU3LTQxQkItNDZFRC04MjkwLTE1MjVEMUFGNjNDRV8yYTNmNTJkYy1mYzMxLTQzNGEtOWU2Yi01ZmMyOGZjODZjNjQiDQp9"
+		}
+	}
+}
